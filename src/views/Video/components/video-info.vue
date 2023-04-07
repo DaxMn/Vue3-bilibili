@@ -21,20 +21,9 @@
 
 <script lang="ts" setup>
 import { defineProps, PropType } from 'vue'
+// 可以把接口抽离出去独立维护
+import { IVideoInfo } from '../types'
 
-interface IVideoInfo {
-  author?: string
-  authorIconSrc?: string
-  commentCount?: number
-  date?: string
-  id?: string
-  poster?: string
-  playCount?: string
-  likeCount?: string
-  favCount?: string
-  videoSrc?: string
-  videoTitle?: string
-}
 defineProps({
   videoInfo: {
     type: Object as PropType<IVideoInfo>,
@@ -47,18 +36,22 @@ defineProps({
 .video-info {
   padding: 3vw 2vw;
   border-bottom: 1px solid #ddd;
+
   .title {
     font-size: 4vw;
     line-height: 6vw;
     margin: 3vw 0;
   }
+
   .author-info {
     display: flex;
     align-items: center;
     font-size: 3vw;
     color: #999;
+
     .author {
       flex: 1;
+
       .author-avatar {
         width: 5vw;
         height: 5vw;
@@ -73,14 +66,15 @@ defineProps({
         color: #212121;
       }
     }
-    > span {
+
+    >span {
       margin: 0 2vw;
     }
+
     .iconfont {
       font-size: 5vw;
       color: #757575;
       margin-right: 2vw;
     }
   }
-}
-</style>
+}</style>

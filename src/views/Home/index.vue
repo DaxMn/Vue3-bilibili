@@ -2,7 +2,7 @@
   <!-- 头部组件 -->
   <AppHeader />
   <!-- 频道组件 -->
-  <HomeChannel />
+  <HomeChannel />s
   <!-- 轮播组件 -->
   <HomeSwipe />
   <!-- 视频列表 -->
@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-// Vue3 的 script setup 只需要导入组件，无需注册，直接可以在模板中使用
+// Vue3 的 script setup 只需要导入组件，无需注册ss
 import AppHeader from '@/components/app-header.vue'
 import HomeChannel from './components/home-channel.vue'
 import HomeSwipe from './components/home-swipe.vue'

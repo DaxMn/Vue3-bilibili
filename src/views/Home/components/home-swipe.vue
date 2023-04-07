@@ -21,7 +21,6 @@ axios({
   url: '/swiperList',
   method: 'get'
 }).then(res => {
-  console.log('轮播图数据', res.data.result)
   list.value = res.data.result
 })
 </script>
@@ -31,4 +30,5 @@ axios({
   img {
     width: 100%;
   }
-}</style>
+}
+</style>
